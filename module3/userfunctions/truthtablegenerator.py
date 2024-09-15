@@ -25,6 +25,8 @@ print(generate_truthtable())
 
 """
 
+#truthtablegenerator.py
+
 def generate_truthtable(number_of_variables=0):
     if number_of_variables == 0:
         return "You need to enter an integer"
@@ -39,21 +41,29 @@ def generate_truthtable(number_of_variables=0):
             combinations_list.append(tuple(int(val) for val in bin_equivalent))
 
         return combinations_list
-    
-#print(generate_truthtable(3))
+
+#new function created
 
 def evaluate_propositional_logic(combinations_list):
     expression = input("Enter the propositional logic expression: ")
 
-    if variables == 2:
+    if len(combinations_list) == 4: #changed from variable == 2 since we no longer are asking for the variable
         print("A B f")
         for A, B in combinations_list:
             evaluated_expression = eval(expression)
             print(A, B, evaluated_expression)
-    elif variables == 3:
+    elif len(combinations_list) == 8: #changed from variable == 3 since we no longer are asking for the variable
         print("A B C f")
         for A, B, C in combinations_list:
             evaluated_expression = eval(expression)
             print(A, B, C, evaluated_expression)
-            
-evaluate_propositional_logic(generate_truthtable(3))
+
+evaluate_propositional_logic(generate_truthtable(2))
+
+#there is no need to use the print function when calling evaluate_propositional_logic
+#because it already calls print within the function
+
+#it is better to define and use functions instead of writing code only sequentially
+#as it 1) allows us to perform the same tasks repeatedly without copying them over and over
+#2) allows us to make our program go non-linearly - it may perform different functions at diffrent times
+#instead of just following the set instructions from top to bottom
