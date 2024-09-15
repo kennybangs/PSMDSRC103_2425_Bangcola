@@ -1,0 +1,4 @@
+Hello, Ken Bangcola!
+Isn't this amazing?
+that we can create and write on text files
+using Python.
