@@ -1,0 +1,3 @@
+Quadratic Equation solved:
+Values of a, b, c:a = 10.0b = 20.0c = 30.0
+Values of x:((-1+1.4j), (-1-1.4j))
