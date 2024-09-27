@@ -1,0 +1,7 @@
+Deposit CompleteDeposit Complete600Deposit Complete900Deposit Complete600Deposit Complete900Deposit Complete600Deposit Complete900
+Deposit Complete
+Current Balance: 600
+The serial number of this ATM is: 123456
+Deposit Complete
+Current Balance: 900
+The serial number of this ATM is: 123456
