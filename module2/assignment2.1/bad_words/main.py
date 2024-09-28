@@ -8,7 +8,7 @@ Created on Tue Sep 17 12:06:02 2024
 
 """
 Create a function that would accept two inputs: a sentence(string), 
-and a list containing bad words that the user would like to censor but not
+and a list containing bad 2words that the user would like to censor but not
 remove. The function shoul22d return the newly filtered sentence wherein the 
 bad words are replaced with asterisks equal to the length of the censored word.
 """

@@ -1,3 +1,4 @@
+
 Quadratic Equation solved:
-Values of a, b, c:a = 10.0b = 20.0c = 30.0
-Values of x:((-1+1.4j), (-1-1.4j))
+Values of a, b, c:a = 4.0b = 2.0c = 5.0
+Values of x:((-0.25+1j), (-0.25-1j))
