@@ -1,0 +1,31 @@
+USE FINALS_DB;
+
+INSERT INTO departments (name)
+VALUES
+('Computer Science'),
+('Electrical Engineering'),
+('Mechanical Engineering'),
+('Civil Engineering'),
+('Mathematics'),
+('Physics'),
+('Chemistry'),
+('Biology'),
+('Psychology'),
+('Sociology'),
+('History'),
+('English'),
+('Economics'),
+('Business Administration'),
+('Accounting'),
+('Finance'),
+('Marketing'),
+('Human Resources'),
+('Information Systems'),
+('Philosophy'),
+('Political Science'),
+('Art History'),
+('Music'),
+('Foreign Languages'),
+('Education'),
+('Nursing'),
+('Law');

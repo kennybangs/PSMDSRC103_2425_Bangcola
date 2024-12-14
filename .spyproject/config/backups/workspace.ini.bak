@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['module3\\OOPIntro_Bangcola\\txn_log2.txt', 'module3\\OOPIntro_Bangcola\\main.py', 'module3\\OOPIntro_Bangcola\\ATM.py', 'module3\\OOPIntro_Bangcola\\Accounts.py']
+recent_files = ['finals\\main.py', 'finals\\sqlFunctions.py', 'module3\\OOPIntro_Bangcola\\Accounts.py', 'finals\\classes.py', 'module3\\OOPIntro_Bangcola\\main.py']
 
 [main]
 version = 0.2.0
