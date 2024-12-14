@@ -78,7 +78,7 @@ def createRecords():
         inputList = []
         outputList = []
         headers = getTableHeaders(tableName)
-        print("f\nPlease fill in the required fields for {tableName}: ")
+        print(f"\nPlease fill in the required fields for {tableName}: ")
         
         for header in headers:
             if checkAutoIncrement(header, tableName):
@@ -90,9 +90,7 @@ def createRecords():
                     inputList.append(input((f"\n {header} : " )))
         
         outputList.append(headers[1:])
-        outputList.append(inputList)
-        print(outputList)
-        
+        outputList.append(inputList)        
         student = dataRecord(outputList,tableName)
         student.showValues()
         student.pushNewRecord()
@@ -345,9 +343,10 @@ class dataRecord():
     def pushNewRecord(self):
         for row in self.dataList[1:]:
             try:
-                print(f"INSERT INTO {self.tableName} {str(tuple(self.showHeaders())).replace("'","")} VALUES {tuple(row)}")
+                #print(f"INSERT INTO {self.tableName} {str(tuple(self.showHeaders())).replace("'","")} VALUES {tuple(row)}")
                 cur.execute(f"INSERT INTO {self.tableName} {str(tuple(self.showHeaders())).replace("'","")} VALUES {tuple(row)}")
                 conn.commit()
+                print("Record successfully inserted.")
             except mariadb.Error as e: 
                 print(f"Error: {e}")
             #print(f"INSERT INTO {self.tableName} ({header}) VALUES ('{row[fieldIndex]})'")
